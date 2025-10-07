@@ -4,7 +4,7 @@ Since Port Forwarding failed due to CGNAT, Tailscale was implemented as the zero
 
 ### 3.1. Tailscale Installation
 
-Installed the package using the official commands on the Ubuntu server:
+Installed the [package](https://tailscale.com/download/linux) using the official commands on the Ubuntu server:
 
 ```bash
 # Example commands (exact commands depend on Ubuntu version but were executed successfully)
