@@ -1,6 +1,6 @@
 This section documents the initial attempts to establish remote access using traditional methods (WireGuard/Port Forwarding) and the necessary migration to Tailscale after hitting the CGNAT roadblock.
 
-3.1. Attempt #1: Traditional VPN Setup (PiVPN/WireGuard) ❌
+3.1. Attempt 1: Traditional VPN Setup (PiVPN/WireGuard) ❌
 
 The initial goal was to use a standard VPN server, which requires a static endpoint (IP or DNS) and open ports.
 
