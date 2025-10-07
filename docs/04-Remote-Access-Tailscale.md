@@ -1,6 +1,6 @@
 # 3. Remote Access Solution: Tailscale (CGNAT Bypass)
 
-Since Port Forwarding failed due to CGNAT [1], Tailscale was implemented as the zero-configuration mesh VPN solution.
+Since Port Forwarding failed due to CGNAT [1](https://github.com/jerry12384/Ubuntu-Home-Media-Server-CGNAT-Bypass/blob/main/docs/03-Remote-Access-Attempts%3A%20The-Journey-from-Failure-to-Success.md) , Tailscale was implemented as the zero-configuration mesh VPN solution.
 
 ### 3.1. Tailscale Installation
 
