@@ -12,7 +12,7 @@ This section outlines the initial preparation of the old laptop, establishing a 
 For a reliable home server, the local IP address must never change.
 
 1.  **Locate Server MAC Address:** Found the MAC address of the server's primary network interface (`eno1`).
-2.  **DHCP Reservation:** Logged into the main router's admin panel and created a **DHCP Reservation** rule. This binds the server's MAC address to a fixed local IP (e.g., `192.168.1.90`).
+2.  **DHCP Reservation:** Logged into the main router's admin panel (type your ip on the browser you use) and created a **DHCP Reservation** rule. This binds the server's MAC address to a fixed local IP (e.g., `192.168.1.144`). (Keep in mind that, to prevent an IP address conflict with your router's Dynamic Host Configuration Protocol (DHCP) server, you must first check the DHCP range your router uses. Then, set your static IP address (e.g., `192.168.1.144`) to an address that falls outside of the router's DHCP assignment pool. For example, if your standard network range is 192.168.1.2 to 192.168.1.254, and your router's DHCP pool is set to 192.168.1.100 to 192.168.1.200, you should choose a static IP like 192.168.1.8 to ensure no other device will be automatically assigned that number).
 3.  **Result:** The server now consistently uses the same local IP, preventing access issues within the LAN. *(Note: This is superior to configuring a static IP directly on the Ubuntu OS for simplicity).*
 
 ### 1.3. Local File Server Configuration (Samba)
@@ -32,10 +32,10 @@ Samba was used to allow Windows, macOS, and Linux devices to easily access and t
     guest ok = no
     create mask = 0644
     directory mask = 0755
-    valid users = jerryserv1
+    valid users = [server_name]
     ```
 3.  **Create Samba User & Restart:**
     ```bash
-    sudo smbpasswd -a jerryserv1
+    sudo smbpasswd -a [server_name]
     sudo systemctl restart smbd
     ```
