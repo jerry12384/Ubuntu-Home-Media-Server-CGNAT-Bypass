@@ -1,7 +1,7 @@
 # Ubuntu-Home-Media-Server-CGNAT-Bypass
 Self-Hosted Media &amp; File Server on Old Laptop | Ubuntu LTS, Jellyfin, Tailscale (CGNAT Bypass)
 
-Project Title: Old Laptop Revival: Secure Home Media Server & File Share with Tailscale
+Project Title: Old Laptop Revival: Secure Home Media Server with Tailscale & File Share 
 
 This project documents the complete process of converting an obsolete laptop into a reliable, low-power home server running Ubuntu Server LTS. The server acts as a centralized File Server (Samba/NFS) for local devices and a fully featured Media Server using Jellyfin.
 
